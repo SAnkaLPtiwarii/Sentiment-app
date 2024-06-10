@@ -1,1 +1,1 @@
-# Sentiment-analysis-chat-app
+# Sentiment-app
