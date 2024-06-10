@@ -1,4 +1,4 @@
-# Sentiment-app
+
 # Real-Time Sentiment Analysis Chat Application
 
 This project is a real-time chat application that integrates sentiment analysis. As users type messages, the app analyzes the sentiment and provides instant feedback with emojis representing the sentiment score.
