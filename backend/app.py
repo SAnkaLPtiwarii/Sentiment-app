@@ -4,8 +4,18 @@ from transformers import pipeline
 import re
 import logging
 
+from flask_cors import CORS
+
+
+
+
 app = Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins="*")
+
+CORS(app, resources={r"/*": {"origins": "https://sentiment-em8u4q7z1-sankalptiwariis-projects.vercel.app"}}, 
+     supports_credentials=True)
+
+socketio = SocketIO(app, cors_allowed_origins="https://sentiment-em8u4q7z1-sankalptiwariis-projects.vercel.app")
+
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
